@@ -16,10 +16,13 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 
 public class DannyActivity extends AppCompatActivity {
     TextView bioView;
-    ImageView bioImage;
+    CircleImageView bioImage;
+
 
 
     @Override

@@ -23,10 +23,12 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class CarolineActivity extends AppCompatActivity {
 
     TextView myView;
-    ImageView myImage;
+    CircleImageView myImage;
 //    TextView myLink;
 //    TextView myLink2;
 //    TextView myLink3;

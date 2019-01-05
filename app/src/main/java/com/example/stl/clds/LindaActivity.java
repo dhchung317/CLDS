@@ -15,12 +15,14 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 import static android.net.Uri.parse;
 
 public class LindaActivity extends AppCompatActivity {
 
     TextView bioText;
-    ImageView bioImage;
+    CircleImageView bioImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

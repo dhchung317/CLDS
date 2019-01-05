@@ -15,10 +15,12 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class SanjeActivity extends AppCompatActivity {
 
     TextView textView;
-    ImageView imageView;
+    CircleImageView imageView;
 
 
     @Override
@@ -27,7 +29,7 @@ public class SanjeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_template);
 
         textView = (TextView) findViewById(R.id.bio_group);
-        imageView = (ImageView) findViewById(R.id.photo_group);
+        imageView = (CircleImageView) findViewById(R.id.photo_group);
 
         imageView.setImageResource(R.drawable.sanje);
         textView.setText(R.string.bio_sanje);

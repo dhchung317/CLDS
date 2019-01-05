@@ -9,7 +9,9 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 import java.util.Random;
 
@@ -17,6 +19,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
+    private NavigationView mnav;
 
 
     @Override
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
-
+        mnav = findViewById(R.id.nav_view);
         Toolbar toolbar = findViewById(R.id.drawer_toolbar);
         setSupportActionBar(toolbar);
 
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         int[] groupColor = getResources().getIntArray(R.array.fav_color);
         int groupFavColor = groupColor[new Random().nextInt(groupColor.length)];
         mDrawerLayout.setBackgroundColor(groupFavColor);
+        mnav.setBackgroundColor(groupFavColor);
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setItemIconTintList(null);
